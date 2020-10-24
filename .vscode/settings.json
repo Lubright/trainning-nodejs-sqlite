@@ -1,0 +1,59 @@
+{
+    "liveServer.settings.port": 5501,
+    //css產出設定
+    "liveSassCompile.settings.formats": [
+        {
+          "extensionName": ".css",
+          // "savePath": "./Ch3_TodoList/public/stylesheets/"
+          "savePath": "./public/stylesheets/"
+        },
+        {
+            "extensionName": ".min.css", //正式版副檔名為min.css
+            "format": "compressed", //壓縮成一行css，正式版本
+            // "savePath": "./Ch3_TodoList/public/stylesheets/dist"
+            "savePath": "./public/stylesheets/dist"
+          //   "savePath": "./public/stylesheets/dist"
+        }
+
+      ],
+      "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+      //generateMap:SASS跟CSS做對應行數
+      "liveSassCompile.settings.generateMap": true,
+      //autoprefix設定
+      //這項套件會自動幫你加入前綴（Prefix）
+      //例如：-webkit- -moz- ...等
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "[html]":{
+      "editor.tabSize": 2
+    },
+    "[sass]": {
+      "editor.tabSize": 2
+    },
+    "[pug]": {
+      "editor.tabSize": 2
+    },
+    "[javascript]": {
+      "editor.tabSize": 2
+    },
+    "pugbeautify.fillTab": false,
+    "pugbeautify.tabSize": 2,
+
+    // js template string using emmet
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "vue-html": "html",
+      "plaintext": "jade"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "compile-hero.javascript-output-toggle": false,
+    // end of js template string
+
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.pug-output-directory": "./",
+    "compile-hero.generate-minified-css": true,
+    "compile-hero.generate-minified-html": true,
+    "jshint.enable": false
+}
