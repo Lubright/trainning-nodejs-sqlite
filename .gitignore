@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/
+
+# db files
+*.db
